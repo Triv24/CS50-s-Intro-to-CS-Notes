@@ -161,12 +161,20 @@ it is used when we want to keep asking the user for positive integer even when h
 
 #### Some commands on Linux :
 1. cd -- change directory
-1. cp -- 
+ - The short hand name for the current directory is '.'
+ - The shorthand name for parent directory of the current directory is '..'
+1. cp -- copy // Syntax : cp <source> <destination> 
+ - copies the file you specify as <source> which will save in <destination>
+ 2. cp -r : This copies the entire directory. -r stands for recursive
 1. ls -- lists the file in current folder
 1. mkdir -- make directory
-1. mv -- rename // Syntax : mv [oldNAme] [newName]
-1. rm -- remove
+1. mv -- stands for move. rename // Syntax : mv [oldNAme] [newName]
+1. rm -- removes a file
+ 2. rm -f : removes without confirmation prompt.
+ 2. rm -r : removes entre directory
+ 2. rm -rf : combined -r and -f.
 1. rmdir -- remove directory
+1. pwd -- stands for present working directory
 
 ### Constants in C :
 - `const` keyword is used to declare a constant.
@@ -198,3 +206,4 @@ Typecasting is the process of converting a variable from one data type to anothe
 
 ### Floating-point imprecision (Issue) :
 Floating-point imprecision is a common issue in programming where the result of a floating-point operation is not exactly what we expect.
+This is because floating-point numbers are represented in binary format, which can lead to rounding errors.
