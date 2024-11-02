@@ -69,3 +69,132 @@ int main (void) {
   }
 }
 ```
+---
+### Use of logical operators in conditional statements :
+> These are :
+> - AND (&&)
+> - OR (||)
+
+```c
+  if (x == 'c' || x == 'C' ){ // Logical Operator OR ||
+    printf("You have entered c.\n");
+  }
+
+  if (x == '1' && y == '1'){ // Logical Operator AND &&
+    printf("X = Y = 1\n");
+  }
+```
+
+### Using Loops :
+- while loop :
+```c
+  int counter = 3;
+  while (counter > 0){
+    printf("%i\n", counter);
+    counter = counter - 1;
+  }
+```
+---
+- for loop :
+```c
+  for(int i = 0; i < 3; i++){
+    printf("%i\n", i);
+  }
+```
+
+---
+
+- do-while loop :
+it is used when we want to keep asking the user for positive integer even when he types something other than positive integer.
+
+```c
+  do {
+    n = get_int("n is : ");
+  } // First asks for n 
+  while (n < 1); // starts analysing condition after 1 execution.
+```
+
+### Functions in C :
+
+1. Void functions :
+```c
+  #include <stdio.h>
+
+  void meow(void); // Function Declaration above main() method, but definition will be down 
+
+  int main(void) {
+    meow();
+  }
+
+  void meow(int n){
+    for (int i = 0; i < n; i++){
+      printf("meow\n");
+    }  
+  }
+```
+2. Return Functions :
+```c
+  #include <stdio.h>
+  #include <cs50.h>
+
+  int add(int a, int b);
+
+  int main(void){
+
+    int x = get_char("X is : ");
+    int y = get_char("Y is : ");
+
+    int c = add(x,y);
+
+    printf(c);
+  }
+
+  int add (int a, int b){
+    return a + b;
+  }
+```
+
+### Linux :
+- Open Source Operating system.
+- Command line interface (cli)
+- Most widely used OS in servers and supercomputers.
+
+#### Some commands on Linux :
+1. cd -- change directory
+1. cp -- 
+1. ls -- lists the file in current folder
+1. mkdir -- make directory
+1. mv -- rename // Syntax : mv [oldNAme] [newName]
+1. rm -- remove
+1. rmdir -- remove directory
+
+### Constants in C :
+- `const` keyword is used to declare a constant.
+- `const` keyword can be used with variables, function parameters, and function return types.
+- `const` keyword is used to prevent the variable from being modified.
+
+Syntax : 
+```c
+const int n = 3;
+```
+
+### Truncation :
+Truncation is the process of cutting off the decimal part of a number.
+Truncation is used when we want to remove the decimal part of a number.
+Truncation is used in financial calculations where we want to round off the amount to the nearest
+integer.
+
+### TypeCasting :
+Typecasting is the process of converting a variable from one data type to another.
+
+```c
+  int x;
+  int y;
+
+  // to convert x and y integers to floats :
+  (float) x;
+  (float) y;
+```
+
+### Floating-point imprecision (Issue) :
+Floating-point imprecision is a common issue in programming where the result of a floating-point operation is not exactly what we expect.
