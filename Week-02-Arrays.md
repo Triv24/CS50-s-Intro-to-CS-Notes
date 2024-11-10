@@ -1,10 +1,14 @@
 # Lecture 02 : Arrays 
 
 - When we run a code 4 steps are happening :
-1. Preprocessing
-2. Compiling 
-3. Assembling
-4. Linking
+1. Preprocessing :
+    - It converts all the #include lines to the function prototypes.
+2. Compiling : 
+    - Converts whole program t assembly code (machine code)
+3. Assembling :
+    - Whole assembly code is converted into binary code
+4. Linking :
+    - All the files are combined into one final program.
 
 ## Debugger in VS Code :
 - there are different options for us to go through the flow of the code.
@@ -21,3 +25,24 @@
 - string (dynamic memory allocation)
 
 // This memory is stored in the RAM 
+
+## Arrays :
+- Arrays are the collection of elements of the same data type stored in contiguous memory locations.
+```c
+    #include <stdio.h>
+    #include <cs50.h>
+
+    int main (void) {
+        
+        const int N = get_int("Enter the number of scores");
+        int scores[N];
+
+        //accept valus for array using loops 
+        for (int i = 0; i < N; i++){
+            scores[i] = get_int("Enter a score: ");
+        }
+    }
+```
+
+### String :
+- String is an array of characters.
