@@ -59,7 +59,7 @@
     #include <string.h>
 
     int main (int argc, string argv[]){
-        string s = get_string("Input is : ");
+        string s = get_string("Input is : "); // requires string.h
         printf("Output is : ");
         for (int i = 0; n = strlen(s); i < n; i++){
             printf(s[i]);
@@ -81,3 +81,4 @@
 
 ### Cipher :
 - An algorithm which is used for the encryption of the messages.
+
