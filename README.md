@@ -8,7 +8,7 @@ The actual notes start from the `Lecture - 01 [C]`.
 ### List of Lectures :
 - [x] Week 0 - Scratch 
 - [x] Week 1 - C 
-- [ ] Week 2 - Arrays
+- [x] Week 2 - Arrays
 - [ ] Week 3 - Algorithms 
 - [ ] Week 4 - Memory 
 - [ ] Week 5 - Data Structures 
