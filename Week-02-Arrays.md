@@ -45,4 +45,39 @@
 ```
 
 ### String :
-- String is an array of characters.
+- String is an sequence/array of characters.
+- A string actually ends with an extra byte -- `\0` OR `NUL`.
+- We can also create an array of strings. 
+
+- To calculate length of string -- function `strlen()`. :: But first include `string.h`.
+
+```c
+    //Note : We can add wo expressions in the initialisation part of for loop as follows : 
+
+    #include <cs50.h>
+    #include <stdio.h>
+    #include <string.h>
+
+    int main (int argc, string argv[]){
+        string s = get_string("Input is : ");
+        printf("Output is : ");
+        for (int i = 0; n = strlen(s); i < n; i++){
+            printf(s[i]);
+        }
+    }
+
+    // Here, `argc` and `argv` is related to the command line arguments we type just after the run command. 
+    // int argc is the number of arguments we type.
+    // string argv is the array of all the string arguments e type in the command.
+```
+
+## Exit Status :
+- The exit status of a program is an integer value that is returned to the operating system when the program terminates.
+
+## Cryptography :
+- Ability to send info securely.
+- Encryption : converting plain text to cipher text.
+- Decryption : converting cipher text to plain text.
+
+### Cipher :
+- An algorithm which is used for the encryption of the messages.
